@@ -20,6 +20,8 @@ int main() {
         cout << "Processing time for " << size << " elements : " << time(NULL) - start_time << " seconds" << endl;
     }
 
+    cout << "Sort in decreasing order:" << endl;
+
     int arr[10];
     for(int i = 0; i < 10; i++){
         arr[i] = rand() % 10;
