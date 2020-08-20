@@ -53,14 +53,14 @@ class DeQueue {
                 cout << "Underflow" << endl;
                 return -1; 
             }
-            int x = arr[tail];
-            arr[tail] = -999;
             if(tail == 0){
                 tail = size - 1;
             }
             else{
                 tail--;
             }
+            int x = arr[tail];
+            arr[tail] = -999;
             return x;
         }
 
