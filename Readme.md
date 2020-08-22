@@ -12,11 +12,14 @@ This repository contain all the algorithms present in the famous book **Introduc
 4. Linked List
     - Singly Linked List
     - Search in Linked List
+    - Doubly Linked List
+    - Circular Linked list
 5. Maximum Subarray Problem
 6. Queue
     - Queue using array
     - Double ended Queue
     - Queue using 2 stacks
+    - Queue using circular linked list
 7. Seaching
     - Linear Search
     - Binary Search
@@ -30,3 +33,4 @@ This repository contain all the algorithms present in the famous book **Introduc
 9. Stack
     - Stack using array
     - Stack using 2 Queues
+    - Stack with Linked list
