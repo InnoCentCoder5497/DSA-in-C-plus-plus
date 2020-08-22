@@ -9,7 +9,7 @@ struct node {
 };
 
 class CircularLinkedList {
-    node *sentinal, *trav, *var;
+    node *sentinal, *trav, *var, *temp;
 
     public:
         CircularLinkedList(){
@@ -36,8 +36,66 @@ class CircularLinkedList {
             }
         }
 
+        void insert_front(int value){
+            var = new node;
+            var->value = value;
+            var->prev = sentinal;
+            if(sentinal->next == sentinal){
+                sentinal->next = var;
+                sentinal->prev = var;
+                var->next = sentinal;
+            }
+            else{
+                trav = sentinal->next;
+                sentinal->next = var;
+                var->next = trav;
+                trav->prev = var;
+            }
+        }
+
+        void delete_front(){
+            if(sentinal->next == sentinal){
+                cout << "Liist is empty" << endl;
+                return;
+            }
+            else{
+                if(sentinal->next->next == sentinal){
+                    trav = sentinal->next;
+                    sentinal->next = sentinal;
+                    sentinal->prev = sentinal;
+                    delete trav;
+                }
+                else{
+                    temp = sentinal->next;
+                    trav = temp->next;
+                    sentinal->next = trav;
+                    trav->prev = sentinal;
+                    delete temp;
+                }
+            }
+        }
+
         void delete_back(){
-            // TODO
+            if(sentinal->next == sentinal){
+                cout << "List is empty" << endl;
+                return;
+            }
+            else{
+                if(sentinal->next->next == sentinal){
+                    trav = sentinal->next;
+                    cout << "Item removed : " << trav->value << endl;
+                    sentinal->next = sentinal;
+                    sentinal->prev = sentinal;
+                    delete trav;
+                }
+                else{
+                    temp = sentinal->prev;
+                    trav = temp->prev;
+                    trav->next = sentinal;
+                    sentinal->prev = trav;
+                    delete temp;
+                }
+            }
         }
 
         void print_forward(){
@@ -73,9 +131,25 @@ int main() {
     CircularLinkedList list;
 
     list.insert_back(10);
+    list.delete_back();
+    list.delete_back();
     list.insert_back(20);
+    list.insert_back(30);
+    list.insert_front(99);
+    cout << endl << "Forward : " << endl;
     list.print_forward();
-    cout << endl;
+    cout << endl << "Backward : " << endl;
+    list.print_backward();
+    list.delete_front();
+    list.insert_back(40);
+    cout << endl << "Forward : " << endl;
+    list.print_forward();
+    cout << endl << "Backward : " << endl;
+    list.print_backward();
+    list.delete_back();
+    cout << endl << "Forward : " << endl;
+    list.print_forward();
+    cout << endl << "Backward : " << endl;
     list.print_backward();
 
     return 0;
