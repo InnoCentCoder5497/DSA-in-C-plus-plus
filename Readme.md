@@ -34,3 +34,7 @@ This repository contain all the algorithms present in the famous book **Introduc
     - Stack using array
     - Stack using 2 Queues
     - Stack with Linked list
+10. Hash Tables
+    - Direct Address Map table
+    - Chained Hash table
+    - Open Address Linear Probing Hash table
