@@ -5,19 +5,23 @@ int Left(int);
 int Right(int);
 void max_heapify(int[], int, int);
 void build_max_heap(int[], int);
+void heap_sort(int[], int);
 
 int main() {
     int arr[11] = {0, 4, 1, 3, 2, 16, 9, 10, 14, 8, 7};
     int heap_size = 10;
     int total_size = 10;
     int i;
+    cout << "Original Input" << endl;
     for(i = 1; i <= heap_size; i++){
         cout << arr[i] << " ";
     }
     cout << endl;
-
+    cout << "Building Heap" << endl;
     build_max_heap(arr, heap_size);
-    
+    cout << "Sorting Heap" << endl;
+    heap_sort(arr, 10);
+    cout << "Sorted Heap" << endl;
     for(i = 1; i <= heap_size; i++){
         cout << arr[i] << " ";
     }
@@ -36,6 +40,20 @@ int Left(int i){
 
 int Right(int i){
     return 2 * i + 1;
+}
+
+
+void heap_sort(int arr[], int size){
+    int s = size;
+    int t;
+    while(size >= 1){
+        t = arr[size];
+        arr[size] = arr[1];
+        arr[1] = t;
+        size--;
+        max_heapify(arr, 1, size);
+
+    }
 }
 
 void build_max_heap(int arr[], int size){
