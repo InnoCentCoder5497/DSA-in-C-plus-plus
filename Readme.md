@@ -5,6 +5,9 @@ This repository contain all the algorithms present in the famous book **Introduc
 ## List of Algorithms
 1. Heap
     - Max Heapify
+    - Build Heap
+    - Heap Sort
+    - Max Priority Queue
 2. Horner's Polynomial Evaluation
 3. Inversions in a List
     - Naive solution
@@ -20,6 +23,7 @@ This repository contain all the algorithms present in the famous book **Introduc
     - Double ended Queue
     - Queue using 2 stacks
     - Queue using circular linked list
+    - Max Priority Queue
 7. Seaching
     - Linear Search
     - Binary Search
@@ -30,6 +34,10 @@ This repository contain all the algorithms present in the famous book **Introduc
     - Merge Sort
     - Selection Sort
     - Merge Sort with Insertions Sort
+    - Heap Sort
+    - Quick Sort
+    - Counting Sort
+    - Radix Sort
 9. Stack
     - Stack using array
     - Stack using 2 Queues
@@ -38,3 +46,6 @@ This repository contain all the algorithms present in the famous book **Introduc
     - Direct Address Map table
     - Chained Hash table
     - Open Address Linear Probing Hash table
+    - Double Hashing
+11. Binary Search Tree
+    - Binary Search Tree (without delete operation)
