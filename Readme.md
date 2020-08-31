@@ -38,6 +38,7 @@ This repository contain all the algorithms present in the famous book **Introduc
     - Quick Sort
     - Counting Sort
     - Radix Sort
+    - Bucket Sort
 9. Stack
     - Stack using array
     - Stack using 2 Queues
