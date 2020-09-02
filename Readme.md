@@ -50,3 +50,6 @@ This repository contain all the algorithms present in the famous book **Introduc
     - Double Hashing
 11. Binary Search Tree
     - Binary Search Tree (without delete operation)
+12. Dynamic Programming
+    - Rod Cutting Problem
+    - Matrix Chain Multiplication
