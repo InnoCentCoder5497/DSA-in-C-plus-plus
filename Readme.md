@@ -53,3 +53,8 @@ This repository contain all the algorithms present in the famous book **Introduc
 12. Dynamic Programming
     - Rod Cutting Problem
     - Matrix Chain Multiplication
+    - Longest Common Subsequence
+13. Greedy Algorithms
+    - Activity Selection Iterative
+    - Activity Selection Recursive
+    - Huffman Coding
