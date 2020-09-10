@@ -58,3 +58,15 @@ This repository contain all the algorithms present in the famous book **Introduc
     - Activity Selection Iterative
     - Activity Selection Recursive
     - Huffman Coding
+14. Disjoint Sets
+    - Disjoint sets using Array
+15. Graph Algorithms
+    - Graph Searching 
+        - Breadth First Search
+        - Depth First Search
+    - Representation
+        - Adjacency Matrix
+        - Adjacency List
+    - Strongly Connected Components
+    - Topological Sort
+    - Transpose of Graph
