@@ -70,3 +70,6 @@ This repository contain all the algorithms present in the famous book **Introduc
     - Strongly Connected Components
     - Topological Sort
     - Transpose of Graph
+    - Minimum Spanning Tree
+        - Kruskal's Algorithm
+        - Prims's Algorithm
