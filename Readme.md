@@ -76,3 +76,4 @@ This repository contain all the algorithms present in the famous book **Introduc
     - Single Source Shortest Path
         - Bellman Ford Algorithm
         - SSSP in Directed Acyclic Graph
+        - Dijkstra Algorithm
